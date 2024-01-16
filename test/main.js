@@ -21,10 +21,10 @@ describe('DOM', () => {
 	});
 
 	it("should be able to create element via 'createElement' function", () => {
-		const paragraphEl = createElement('p', 'para', 'Lorem ipsum');
+		const paragraphEl = createElement('p', 'desc', 'Some dummies description');
 		document.body.appendChild(paragraphEl);
 
-		const isParagraphElExist = !!document.querySelector('.para');
+		const isParagraphElExist = !!document.querySelector('.desc');
 		assert.ok(isParagraphElExist);
 	});
 
